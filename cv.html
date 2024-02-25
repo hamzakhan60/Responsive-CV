@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,500;1,700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .left {
+          
+            width: 30%;
+            height: 100%;
+
+        }
+
+        .right {
+            
+            width: 70%;
+            height: 100%;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: row;
+
+        }
+        @media screen and (max-width:1057px) {
+            .parent{
+                display: flex;
+                flex-direction: column;
+            }
+            .left{
+                width: 100%;
+
+            }
+            .right{
+                width: 100%;
+                padding-left: 0px;
+            }
+            
+        }
+
+        .imageDiv img {
+            border-radius: 80%;
+        }
+
+        .left-Child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(136, 64, 64);
+            padding-top: 50px;
+            font-family: 'Merriweather', serif;
+            background-color: rgb(53, 43, 43);
+            color: white;
+            height: fit-content;
+        }
+
+        .nameDiv h3 {
+            text-align: center;
+        }
+
+        .frontEndDeveloper {
+            border-bottom: 1px solid rgb(94, 90, 90);
+            border-top: 1px solid rgb(94, 90, 90);
+            width: 70%;
+        }
+
+        .infoDiv,
+        .SocialInfoDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 70%;
+        }
+
+        .info,
+        .social {
+            margin-top: 50px;
+            height: 20px;
+            padding: 5px;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(94, 90, 90);
+            border-top: 1px solid rgb(94, 90, 90);
+
+
+        }
+
+        .address,
+        .phone,
+        .email,
+        .gitHub {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+
+        }
+
+        .fa-location-dot,
+        .fa-phone,
+        .fa-envelope,
+        .fa-skype,
+        .fa-facebook,
+        .fa-github,
+        .fa-instagram {
+            padding-top: 25px;
+        }
+
+        .right {
+            font-family: 'Merriweather', serif;
+            padding-left: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+
+        }
+
+        .right .profile,
+        .education {
+            color: rgb(53, 43, 43);
+            font-size: 20px;
+            font-weight: bold;
+            border-top: 1px solid rgb(53, 43, 43);
+            border-bottom: 1px solid rgb(53, 43, 43);
+            width: 70%;
+
+        }
+
+        .firstDiv,
+        .educationDiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .fa-user {
+            padding-top: 30px;
+            padding-right: 10px;
+
+        }
+        input[type="range"]{
+            
+            width: 60%;
+            height: 15px;
+            background-color: black;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+           
+           
+        }
+        input[type="range"]::-webkit-slider-runnable-track{
+            
+            border-radius: 5px;
+            
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            position: fixed;
+        }
+        .div1{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between; 
+            width:100%;
+        }
+        @media screen and (max-width:573px) {
+            .div1{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="Hamza_Khan.jpg" alt="loding" > -->
+    <div class="parent" style="border: 1px solid black; width: 100%; ">
+        <div class="left">
+            <div class="left-Child">
+                <div class="imageDiv">
+                    <img src="Hamza_Khan.jpg" alt="" width="200px" height="185px">
+                </div>
+                <div class="nameDiv">
+                    <h1>Hamza Khan</h1>
+                    <h3>Software Engineer</h3>
+                </div>
+                <div class="frontEndDeveloper">
+                    <h5>Front End Web Developer</h5>
+                </div>
+
+                <div class="infoDiv">
+                    <p class="info">INFO</p>
+                    <div class="address">
+                        <div> <i class="fa-sharp fa-solid fa-location-dot fa-xl" style="color: white"></i></div>
+                        <div
+                            style="display: flex; flex-direction: column; line-height: 2px; padding-left: 20px; margin-top: -5px;">
+                            <p>Address</p>
+                            <p>Tahir Town,DG Khan</p>
+                        </div>
+                    </div>
+
+                    <div class="phone">
+                        <div> <i class="fa-solid fa-phone" style="color: #ffffff;"></i></div>
+                        <div
+                            style="display: flex; flex-direction: column; line-height: 2px; padding-left: 20px; margin-top: -5px;">
+                            <p>Phone</p>
+                            <p>+92,123456789</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div> <i class="fa-regular fa-envelope fa-lg" style="color: #ffffff;"></i></div>
+                        <div
+                            style="display: flex; flex-direction: column; line-height: 2px; padding-left: 20px; margin-top: -5px;">
+                            <p>Email</p>
+                            <p>hghauri30@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="gitHub">
+                        <div><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></div>
+                        <div
+                            style="display: flex; flex-direction: column; line-height: 2px; padding-left: 20px; margin-top: -5px;">
+                            <p>GitHub</p>
+                            <p>hamzakhan60</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="SocialInfoDiv">
+                    <p class="social">SOCIAL</p>
+                    <div class="address">
+                        <div><i class="fa-brands fa-skype fa-lg" style="color: #ffffff;"></i></div>
+                        <div
+                            style="display: flex; flex-direction: column; line-height: 2px; padding-left: 20px; margin-top: -5px;">
+                            <p>Skype</p>
+                            <p>Hamza_khan09</p>
+                        </div>
+                    </div>
+
+                    <div class="phone">
+                        <div> <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></div>
+                        <div
+                            style="display: flex; flex-direction: column; line-height: 2px; padding-left: 20px; margin-top: -5px;">
+                            <p>Facebook</p>
+                            <p>Hamza Ghauri</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div> <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></div>
+                        <div
+                            style="display: flex; flex-direction: column; line-height: 2px; padding-left: 20px; margin-top: -5px;">
+                            <p>Instagram</p>
+                            <p>hamza_ghaurii</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="profileDiv">
+                <div class="firstDiv">
+                    <i class="fa-solid fa-user fa-2xl" style="color: rgb(53, 43, 43)"></i>
+                    <p class="profile" style="width: 80%;">PROFILE</p>
+                </div>
+                <div style=" width:90%; line-height: 25px; color: grey;font-weight:5px">
+                    
+As a frontend developer, I am passionate about crafting user-friendly and visually appealing websites. With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating responsive and interactive web experiences. I thrive in collaborative environments, where I can utilize my problem-solving skills to turn design concepts into functional and engaging interfaces. Committed to staying updated with the latest technologies and trends, I strive to deliver high-quality solutions that meet both user needs and business objectives. </div>
+            </div>
+            <div class="educationDiv" style="margin-top: 20px;">
+                <i class="fa-solid fa-pencil fa-2xl"
+                    style="color: rgb(53, 43, 43); padding-top: 15px; padding-right: 10px;"></i>
+                <div class="education">
+                    EDUCATION
+                </div>
+            </div>
+            <div style=" width: 80%; margin-top: 20px; ">
+                <div>
+                    <div class="div1" >
+                        <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">2017-2019</p>
+                        <div style="line-height: 10px; color:gray;">
+                            <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">Matriculation</p>
+                            City High School DG Khan secured 90% result
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">2019-2021</p>
+                        <div style="line-height: 10px; color:gray;">
+                            <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">Intermadiate</p>
+                            Degree College DG Khan secured 93% result
+                        </div>
+                    </div>
+                    <div class="div1">
+                        <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">2022-continue</p>
+                        <div style="line-height: 10px; color:gray;">
+                            <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">Bachelors</p>
+                            BS-Software Engineering COMSATS Lahore
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="educationDiv" style="margin-top: 20px;">
+                <i class="fa-solid fa-book-open fa-2xl"
+                    style="color: rgb(53, 43, 43); padding-top: 15px; padding-right: 10px;"></i>
+                <div class="education">
+                    EXPERIENCE
+                </div>
+            </div>
+            <div style=" width: 80%; margin-top: 20px; ">
+                <div>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; width:100%;">
+                        
+                        <div style="line-height: 25px; color:gray;">
+                          
+Seeking a challenging role to refine and enhance my skills as a university student aspiring towards a career in frontend development. Proficient in various semester projects, I've gained valuable experience in designing and implementing web solutions, eager to apply my knowledge in a professional setting. Dedicated to continuous learning and growth, I am ready to contribute to innovative projects while further developing my expertise in frontend development.
+                            
+                        </div>
+                    </div>
+                </div>
+             
+
+            </div>
+            <div class="educationDiv" style="margin-top: 20px;">
+                <i class="fa-solid fa-bars-progress fa-2xl" 
+                    style="color: rgb(53, 43, 43); padding-top: 15px; padding-right: 10px;"></i>
+                <div class="education">
+                    SKILLS & EXPERTIES
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row; color: rgb(53, 43, 43); font-size: 18px; font-weight: bold;">
+            <div style="width: 100%; display: flex; flex-direction: column;">
+            <div style="padding-top: 50px;" >
+            <div>HTML</div>
+            <div style="position: relative;">
+                <div style="background-color:rgb(53, 43, 43); width: 80%; position: absolute; z-index: 0; height: 9px; border-radius: 5px; left:3px"></div>
+                <input type="range" min="0" max="100" value="100" style="width:70%">
+            </div>
+            </div>
+            <div  style="padding-top: 50px;">
+                <div>CSS</div>
+                <div style="position: relative;">
+                    <div style="background-color: rgb(53, 43, 43); width: 80%; position: absolute; z-index: 0; height: 9px; border-radius: 5px; left:3px"></div>
+                    <input type="range" min="0" max="100" value="100" style="width:60%">
+                </div>
+                </div>
+            </div>
+            <div style="width: 100%; display: flex; flex-direction: column;">
+                <div style="padding-top: 50px;" >
+                <div>Java Script</div>
+                <div style="position: relative; width: 90%;">
+                    <div style="background-color: rgb(53, 43, 43); width: 80%; position: absolute; z-index: 0; height: 9px; border-radius: 5px; left:3px"></div>
+                    <input type="range" min="0" max="100" value="100" style="width:60%">
+                </div>
+                </div>
+                <div  style="padding-top: 50px;">
+                    <div>DSA</div>
+                    <div style="position: relative; width: 90%;">
+                        <div style="background-color: rgb(53, 43, 43); width: 80%; position: absolute; z-index: 0; height: 9px; border-radius: 5px; left:3px"></div>
+                        <input type="range" min="0" max="100" value="100" style="width:65%">
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="educationDiv" style="margin-top: 40px;">
+                <i class="fa-solid fa-book fa-2xl"
+                    style="color: rgb(53, 43, 43); padding-top: 15px; padding-right: 10px;"></i>
+                <div class="education">
+                    HOBBIES
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; padding-top: 50px;">
+                <i class="fa-solid fa-terminal fa-2xl " style="color:rgb(53, 43, 43);  ;"></i>
+                <i class="fa-solid fa-gamepad fa-2xl" style="color:rgb(53, 43, 43);"></i>
+                <i class="fa-solid fa-car fa-2xl" style="color:rgb(53, 43, 43); "></i>
+                <i class="fa-solid fa-music fa-2xl" style="color:rgb(53, 43, 43)"></i>
+                <i class="fa-solid fa-bicycle fa-2xl" style="color:rgb(53, 43, 43)"></i>
+                
+            </div>
+
+        </div>
+</body>
+
+</html>
