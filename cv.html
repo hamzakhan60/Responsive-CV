@@ -32,14 +32,27 @@
             .parent{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                width:100%;
             }
             .left{
                 width: 100%;
-
+                
             }
             .right{
-                width: 100%;
+                width: 85%;
                 padding-left: 0px;
+                
+                
+            }
+            
+        }
+        @media screen and(max-width:741px) {
+            .right{
+                width:60%;
+            }
+            .left{
+                width: 100%;
             }
             
         }
@@ -148,20 +161,15 @@
         }
         input[type="range"]{
             
-            width: 60%;
+           
             height: 15px;
-            background-color: black;
             position: absolute;
             z-index: 1;
             top: -5px;
            
            
         }
-        input[type="range"]::-webkit-slider-runnable-track{
-            
-            border-radius: 5px;
-            
-        }
+       
         input[type="range"]::-webkit-slider-thumb {
             position: fixed;
         }
@@ -171,18 +179,31 @@
             justify-content: space-between; 
             width:100%;
         }
-        @media screen and (max-width:573px) {
+        @media screen and (max-width:611px) {
             .div1{
                 flex-direction: column;
             }
+            .hobbies{
+                flex-wrap: wrap;
+            }
+           
             
+        }
+        .hobbies{
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-evenly; 
+            padding-top: 50px;
+            height: 200px;
+           
+            width:70%;
         }
     </style>
 </head>
 
 <body>
     <!-- <img src="Hamza_Khan.jpg" alt="loding" > -->
-    <div class="parent" style="border: 1px solid black; width: 100%; ">
+    <div class="parent" >
         <div class="left">
             <div class="left-Child">
                 <div class="imageDiv">
@@ -287,21 +308,21 @@ As a frontend developer, I am passionate about crafting user-friendly and visual
                 <div>
                     <div class="div1" >
                         <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">2017-2019</p>
-                        <div style="line-height: 10px; color:gray;">
+                        <div style="line-height: 15px; color:gray;">
                             <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">Matriculation</p>
                             City High School DG Khan secured 90% result
                         </div>
                     </div>
                     <div class="div1">
                         <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">2019-2021</p>
-                        <div style="line-height: 10px; color:gray;">
+                        <div style="line-height: 15px; color:gray;">
                             <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">Intermadiate</p>
                             Degree College DG Khan secured 93% result
                         </div>
                     </div>
                     <div class="div1">
                         <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">2022-continue</p>
-                        <div style="line-height: 10px; color:gray;">
+                        <div style="line-height: 15px; color:gray;">
                             <p style="color:rgb(53, 43, 43); font-size: 18px; font-weight: bolder;">Bachelors</p>
                             BS-Software Engineering COMSATS Lahore
                         </div>
@@ -343,14 +364,14 @@ Seeking a challenging role to refine and enhance my skills as a university stude
             <div style="width: 100%; display: flex; flex-direction: column;">
             <div style="padding-top: 50px;" >
             <div>HTML</div>
-            <div style="position: relative;">
+            <div style="position: relative; width: 90%;">
                 <div style="background-color:rgb(53, 43, 43); width: 80%; position: absolute; z-index: 0; height: 9px; border-radius: 5px; left:3px"></div>
                 <input type="range" min="0" max="100" value="100" style="width:70%">
             </div>
             </div>
             <div  style="padding-top: 50px;">
                 <div>CSS</div>
-                <div style="position: relative;">
+                <div style="position: relative; width:90%">
                     <div style="background-color: rgb(53, 43, 43); width: 80%; position: absolute; z-index: 0; height: 9px; border-radius: 5px; left:3px"></div>
                     <input type="range" min="0" max="100" value="100" style="width:60%">
                 </div>
@@ -381,8 +402,8 @@ Seeking a challenging role to refine and enhance my skills as a university stude
                     HOBBIES
                 </div>
             </div>
-            <div style="display: flex; flex-direction: row; justify-content: space-evenly; padding-top: 50px;">
-                <i class="fa-solid fa-terminal fa-2xl " style="color:rgb(53, 43, 43);  ;"></i>
+            <div class="hobbies" >
+                <i class="fa-solid fa-terminal fa-2xl " style="color:rgb(53, 43, 43);"></i>
                 <i class="fa-solid fa-gamepad fa-2xl" style="color:rgb(53, 43, 43);"></i>
                 <i class="fa-solid fa-car fa-2xl" style="color:rgb(53, 43, 43); "></i>
                 <i class="fa-solid fa-music fa-2xl" style="color:rgb(53, 43, 43)"></i>
@@ -391,6 +412,7 @@ Seeking a challenging role to refine and enhance my skills as a university stude
             </div>
 
         </div>
+    </div>
 </body>
 
 </html>
